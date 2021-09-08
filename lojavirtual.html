@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petz|Adote um Petz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/animations.css" />
+	<link rel="stylesheet" href="/styles/page-landing.css">
+	<link rel="stylesheet" href="/styles/lojavirtual.css">
+
+
+</head>
+<body id="loja__virtual">
+ <div class="site-wrap">
+   <div class="header.header.header-desktop">
+     <div class="container">
+       <div class="header-content-holder">
+         <div class="logo-header header-icon">
+           <a class="logo-holder" href="/">
+           <img src="/Screenshorts/logo.svg" class="logo img-responsive" alt="Petz-ShopOnline" title="Petz-pet sohp Online" itemprop="logo">
+          </a>
+           <div class="header-main-content">
+             <nav class="content-actions">
+               <ul class="link-actions">
+                 <li class="link">
+                   <a href="/repetir-pedido">Repetir Pedido</a>
+                   <li class="link have-dropdown">
+                     <button class="link-label has-children">Atendimento</button>
+                     <ul class="dropdown-content">
+                       <li>
+                         <a href="/meus-pedidos">Acompanhar pedidos</a>
+                        </li>
+                        <li>
+                          <a href="/atendimento-inteligente">Fale conosco</a>
+                         </li>
+                     </ul>
+                     <li class="link">
+                       <a href="/nossas-lojas">Lojas</a>  
+                     </li>
+                     <li class="link">
+                      <a href="/blog">Blog</a>  
+                    </li>
+                   </li>
+                 </li>
+               </ul>
+             </nav>
+             <div class="content-user">
+               <form class="search-holder" action="/busca" method="GET" onsubmit="return validabusca('Digite pelo menos 3 caracteres','search');">
+              <label for="search" class="visuallyhidden">Busca</label>
+              <input type="text" name="q" class="inputPesquisa" id="search" placeholder="pesquisar pet" maxlenght="128" autocomplete="off">
+              <button  type="submit" class="button-search">
+                <i class="custom-icon icon-lupa"></i>
+              </button>
+              </form>
+              <div class="log-in">
+                <div class="login have-dropdown">
+                  <button class="greetins">
+                    <i class="icon-user"></i>
+                    <p>"Olá, Entre" 
+                      <span>ou cadastre-se</span>
+                    </p>
+                  </button>
+                  <ul class="dropdown-content dropdown-large">
+                    <li class="not-loggedin">
+                      <div>
+                        <a href="/entrar" class="button-login">Entrar</a>
+                        <p>
+                          "Não tem cadastro?"
+                          <a href="/clienteLoja.html">Criar Conta</a>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <span  id="float-cart-holder">
+                <div class="dropdown-cart have-dropdown">
+                  <div>
+                    <a href="/comprar-agora" class="button-cart">
+                      <i class="icon-carrinho"></i>
+                    </a>
+                  </div>
+                </div>
+              </span>
+             </div>
+           </div>
+         </div>
+
+       </div>
+       <div class="nav-mask"></div>
+       <div class="yamm navbar-blue navbar-static-top" id="menuPetz" >
+         <div class="yamm">
+           <div class="container reset-padding">
+             <div class="navbar-header">
+               <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle"/>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             </button>
+             </div>
+             <div  id="navbar-collapse-grid" class="navbar-collapse collapse">
+               <ul  class="nav navbar-nav">
+                 <li clas="dropdown dropdown-dog yamm-fw x">
+                   <a href="/cachorro" class="cursorPointer nomeCatPrincipalMenu bg-ativar">Cachorros</a>
+                   <ul class="dropdown-menu">
+                     <li class="grid-demo large">
+                       <ul class="sub-menu-container">
+                         <li class="menuparent"  style="background:rgb(238, 238, 238);">
+                        <a href="/cachorro/racao">
+                        "               Ração 
+                                               "
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        <i class="arrow arrow-right"></i>
+                        </a>
+                        <div class="holder-sub">
+                          <ul  class="submenu ext sub-menu-inside">
+                            <li class="li-menu-testeira">
+                              <a class="submenu-text" href="/cachorro/racao/racao-seca">Ração Seca</a>
+                            </li>
+                            <li class="li-menu-testeira">
+                              <a class="submenu-text" href="/cachorro/racao/racao-umida">Ração Úmida</a>
+                            </li>
+                            <li class="li-menu-testeira">
+                              <a class="submenu-text" href="/cachorro/racao/racao-prescrita">Ração Prescrita</a>
+                            </li>
+                            <li class="li-menu-testeira">
+                              <a class="submenu-text" href="/cachorro/racao/racao-natural">Ração Natural</a>
+                            </li>
+                            <li class="li-menu-testeira">
+                              <a class="submenu-text" href="/cachorro/racao">Ver todos</a>
+                            </li>
+                            </ul>
+
+                            <div class="favorite-brands  hideTotenAssinatura">
+                              <div class="image-category">
+                                <img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+                              </div>
+                              <div class="brands-holder">
+                                <div class="col-sm-6">
+                                  <a href="/royal-canin/f/pet_cachorros">
+                                    <div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-royal-canin-royal_canin.jpg&quot;);">
+                                      <img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-royal-canin-royal_canin.jpg">
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-sm-6">
+                                  <a href="/premierpet/f/pet_cachorros">
+                                    <div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/Golden.jpg&quot;);">
+                                      <img class="background" src="https://www.petz.com.br/novaLoja/images/menu/Golden.jpg">
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-sm-6">
+                                  <a href="/hills/f/pet_cachorros">
+                                    <div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/hills-imagem-marca.jpg&quot;);">
+                                      <img class="background" src="https://www.petz.com.br/novaLoja/images/menu/hills-imagem-marca.jpg">
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-sm-6">
+                                  <a href="/eukanuba">
+                                    <div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-eukanuba-eukanuba.jpg&quot;);">
+                                      <img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-eukanuba-eukanuba.jpg">
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-sm-12">
+                                  <a href="/cachorro/racao" class="blue-link">Ver todas as marcas</a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        </li>
+
+<li class="menuparent" style="background: rgb(238, 238, 238);">
+										<a href="/cachorro/petiscos-e-ossos">
+											Petiscos e Ossos
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/petiscos-e-ossos/palitos">Palitos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/petiscos-e-ossos/bifinhos">Bifinhos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/petiscos-e-ossos/biscoitos">Biscoitos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/petiscos-e-ossos/bolos-e-chocolates">Bolos e
+														Chocolates</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/petiscos-e-ossos/bebidas-e-molhos">Bebidas e
+														Molhos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/petiscos-e-ossos/ossinhos">Ossinhos</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/petiscos-e-ossos">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+
+                  <li class="menuparent" style="background: rgb(238, 238, 238);">
+										<a href="/cachorro/tapetes-fraldas-e-banheiros">
+											Tapetes, Fraldas e Banheiros
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/tapetes-fraldas-e-banheiros/tapetes-higienicos">Tapetes Higiênicos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/tapetes-fraldas-e-banheiros/fraldas">Fraldas</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/tapetes-fraldas-e-banheiros/banheiros">Banheiros</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/tapetes-fraldas-e-banheiros/cones">Cones</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/tapetes-fraldas-e-banheiros">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+                    <a href="/cachorro/farmacia">
+                      Fármacia
+                      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                      <i class="arrow arrow-right"></i>
+                    </a>
+                    <div class="holder-sub">
+                      <ul class="sub-menu ext sub-menu-inside">
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/antipulgas-e-carrapatos">Antipulgas e
+                            Carrapatos</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/demais-medicamentos">Demais
+                            Medicamentos</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/anti-inflamatorios">Anti-inflamatórios</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/antibioticos">Antibióticos</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/suplementos-e-vitaminas">Suplementos e
+                            Vitaminas</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/vermifugos">Vermífugos</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/homeopaticos-e-florais">Homeopáticos e
+                            Florais</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/oftalmologicos">Oftalmológicos</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/otologicos">Otológicos</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/cuidado-oral">Cuidado Oral</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/banho-terapeutico">Banho
+                            Terapêutico</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/roupas-cirurgicas">Roupas
+                            Cirúrgicas</a>
+                        </li>
+                        <li class="li-menu-testeira">
+                          <a class="submenu-text" href="/cachorro/farmacia/colares-elizabetanos">Colares
+                            Elizabetanos</a>
+                        </li>
+                        <li class="li-menu-testeira li-menu-all">
+                          <a class="submenu-text" href="/cachorro/farmacia">Ver todos</a>
+                        </li>
+                      </ul>
+                      <div class="favorite-brands hideTotenAssinatura">
+                        <div class="image-category">
+                          <img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+                        </div>
+                        <div class="brands-holder">
+                          <div class="col-sm-6">
+                            <a href="/bayerpet/f/pet_cachorros">
+                              <div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-bayer-pet-bayer.jpg&quot;);">
+                                <img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-bayer-pet-bayer.jpg">
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-sm-6">
+                            <a href="/frontline/f/pet_cachorros">
+                              <div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-frontline-frontiline_plus.jpg&quot;);">
+                                <img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-frontline-frontiline_plus.jpg">
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-sm-6">
+                            <a href="/ceva/f/pet_cachorros">
+                              <div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-ceva-ceva.jpg&quot;);">
+                                <img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-ceva-ceva.jpg">
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-sm-12">
+                            <a href="/cachorro/farmacia" class="blue-link">Ver todas as marcas</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>   
+
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/brinquedos">
+											Brinquedos
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/brinquedos/bichinhos-de-pelucia">Bichinhos de
+														Pelúcia</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/brinquedos/bolinhas">Bolinhas</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/brinquedos/brinquedos-em-nylon">Brinquedos em
+														Nylon</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/brinquedos/brinquedos-educativos">Brinquedos
+														Educativos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/brinquedos/brinquedos-de-corda">Brinquedos de
+														Corda</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/brinquedos/frisbees">Frisbees</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/brinquedos/mordedores">Mordedores</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/brinquedos">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+									</li>                          
+                          
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/coleiras-guias-e-peitorais">Coleiras, Guias e Peitorais<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i></a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/coleiras-guias-e-peitorais/coleiras">Coleiras</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/coleiras-guias-e-peitorais/guias">Guias</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/coleiras-guias-e-peitorais/peitorais">Peitorais</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/coleiras-guias-e-peitorais/rastreadores">Rastreadores</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/coleiras-guias-e-peitorais">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+                                           
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/beleza-e-limpeza">
+											Beleza e Limpeza
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/banho-a-seco-e-talcos">Banho à
+														Seco e Talcos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/sabonetes">Sabonetes</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/shampoos-e-condicionadores">Shampoos e
+														Condicionadores</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/hidratantes">Hidratantes</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/perfumes-e-colonias">Perfumes e
+														Colônias</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/higiene-bucal">Higiene
+														Bucal</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/pentes-escovas-e-rasqueadeiras">Pentes, Escovas e
+														Rasqueadeiras</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/lencos-umedecidos">Lenços
+														Umedecidos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/limpeza-de-olhos-e-ouvidos">Limpeza de Olhos e
+														Ouvidos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/maquina-de-tosa-e-acessorios">Máquina de Tosa e
+														Acessórios</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/alicates-e-tesouras">Alicates e
+														Tesouras</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/coletor-de-fezes">Coletor de
+														Fezes</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/eliminador-de-odores-e-desinfetantes">Eliminador de
+														Odores e Desinfetantes</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza/educadores-repelentes-e-atrativos">Educadores,
+														Repelentes e Atrativos</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/beleza-e-limpeza">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+												<div class="brands-holder">
+													<div class="col-sm-6">
+														<a href="/pet-society/f/pet_cachorros">
+															<div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/pet_society.jpg&quot;);">
+																<img class="background" src="https://www.petz.com.br/novaLoja/images/menu/pet_society.jpg">
+															</div>
+														</a>
+													</div>
+													<div class="col-sm-6">
+														<a href="/supersecao">
+															<div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-supersecao-super_secao.jpg&quot;);">
+																<img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-supersecao-super_secao.jpg">
+															</div>
+														</a>
+													</div>
+													<div class="col-sm-6">
+														<a href="/chalesco/f/pet_cachorros">
+															<div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/chalesco-imagem-marca.jpg&quot;);">
+																<img class="background" src="https://www.petz.com.br/novaLoja/images/menu/chalesco-imagem-marca.jpg">
+															</div>
+														</a>
+													</div>
+													<div class="col-sm-6">
+														<a href="/sanoldog/f/pet_cachorros">
+															<div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-sanol-dog-sanol_dog.jpg&quot;);">
+																<img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-sanol-dog-sanol_dog.jpg">
+															</div>
+														</a>
+													</div>
+													<div class="col-sm-12">
+														<a href="/cachorro/beleza-e-limpeza" class="blue-link">Ver todas as marcas</a>
+													</div>
+												</div>
+											</div>
+										</div>
+                  </li>
+                                           
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/camas-e-cobertores">
+											Camas e Cobertores
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/camas-e-cobertores/almofadas-e-colchonetes">Almofadas e
+														Colchonetes</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/camas-e-cobertores/camas">Camas</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/camas-e-cobertores/edredons-cobertores-e-mantas">Edredons, Cobertores
+														e Mantas</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/camas-e-cobertores">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+                                           
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/casas-e-tocas">
+											Casas e Tocas
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/casas-e-tocas/casas">Casas</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/casas-e-tocas/tocas">Tocas</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/casas-e-tocas">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+                                           
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/acessorios-de-alimentacao">
+											Acessórios de Alimentação
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-alimentacao/fontes">Fontes</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-alimentacao/dosadores-de-racao">Dosadores de Ração</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-alimentacao/porta-racao">Porta
+														Ração</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-alimentacao/comedouros">Comedouros</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-alimentacao/bebedouros">Bebedouros</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-alimentacao/jogo-americano">Jogo
+														Americano</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-alimentacao/mamadeiras">Mamadeiras</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/acessorios-de-alimentacao">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+												<div class="brands-holder">
+													<div class="col-sm-6">
+														<a href="/ferplast/f/pet_cachorros">
+															<div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-ferplast-ferplast.jpg&quot;);">
+																<img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-ferplast-ferplast.jpg">
+															</div>
+														</a>
+													</div>
+													<div class="col-sm-6">
+														<a href="/chalesco/f/pet_cachorros">
+															<div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/chalesco-imagem-marca.jpg&quot;);">
+																<img class="background" src="https://www.petz.com.br/novaLoja/images/menu/chalesco-imagem-marca.jpg">
+															</div>
+														</a>
+													</div>
+													<div class="col-sm-6">
+														<a href="/jambopet/f/pet_cachorros">
+															<div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-jambo-pet-jambo_pet.jpg&quot;);">
+																<img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-jambo-pet-jambo_pet.jpg">
+															</div>
+														</a>
+													</div>
+													<div class="col-sm-6">
+														<a href="/pickorruchos/f/pet_cachorros">
+															<div class="fix-bg" style="background-image: url(&quot;https://www.petz.com.br/novaLoja/images/menu/imagem-marca-pickorruchos-pickorruchos.jpg&quot;);">
+																<img class="background" src="https://www.petz.com.br/novaLoja/images/menu/imagem-marca-pickorruchos-pickorruchos.jpg">
+															</div>
+														</a>
+													</div>
+													<div class="col-sm-12">
+														<a href="/cachorro/acessorios-de-alimentacao" class="blue-link">Ver todas as
+															marcas</a>
+													</div>
+												</div>
+											</div>
+										</div>
+                  </li>
+                                           
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/acessorios-de-transporte">
+											Acessórios de Transporte
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-transporte/caixas-de-transporte">Caixas de
+														Transporte</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-transporte/bolsas-de-transporte">Bolsas de
+														Transporte</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-transporte/carrinhos">Carrinhos</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-transporte/cintos-de-seguranca">Cintos de Segurança</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-transporte/cadeirinhas">Cadeirinhas</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/acessorios-de-transporte/capas-para-banco-de-carro">Capas para Banco
+														de Carro</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/acessorios-de-transporte">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+                                           
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/portoes-grades-e-escadas">
+											Portões, Grades e Escadas
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/portoes-grades-e-escadas/portoes">Portões</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/portoes-grades-e-escadas/grades">Grades</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/portoes-grades-e-escadas/canil">Canil</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/portoes-grades-e-escadas/portas">Portas</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/portoes-grades-e-escadas/escadas">Escadas</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/portoes-grades-e-escadas">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>    
+                                       
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/roupas">
+											Roupas
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/roupas/roupas-de-inverno">Roupas de Inverno</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/roupas/roupas-de-verao">Roupas de Verão</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/roupas/diversos">Diversos</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/roupas">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+                                           
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/adestramento-e-comportamento">
+											Adestramento e Comportamento
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/adestramento-e-comportamento/acessorios-para-treinamento">Acessórios
+														para Treinamento</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/adestramento-e-comportamento/focinheiras-e-enforcadores">Focinheiras e
+														Enforcadores</a>
+												</li>
+												<li class="li-menu-testeira">
+													<a class="submenu-text" href="/cachorro/adestramento-e-comportamento/coleiras-antilatido">Coleiras
+														Antilatido</a>
+												</li>
+												<li class="li-menu-testeira li-menu-all">
+													<a class="submenu-text" href="/cachorro/adestramento-e-comportamento">Ver todos</a>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+                                           
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a href="/cachorro/racas">
+											Raças
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-list">
+													<ul class="column">
+														<li class="li-menu-title">
+															<p>Pequeno</p>
+														</li>
+														<li class="li-menu-testeira li-menu-columsn">
+															<a class="submenu-text" href="/cachorro/racas/lulu-da-pomerania">Lulu da
+																Pomerânia</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/pug">Pug</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/yorkshire">Yorkshire</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/pinscher">Pinscher</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/shih-tzu">Shih Tzu</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/lhasa-apso">Lhasa Apso</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/maltes">Maltês</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/chihuahua">Chihuahua</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/buldogue-frances">Bulldog Francês</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/poodle">Poodle</a>
+														</li>
+													</ul>
+													<ul class="column">
+														<li class="li-menu-title">
+															<p>Médio</p>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/pitbull">Pitbull</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/border-collie">Border collie</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/bull-terrier">Bull terrier</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/chow-chow">Chow Chow</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/beagle">Beagle</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/shar-pei">Shar Pei</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/bulldog-ingles">Bulldog Inglês</a>
+														</li>
+													</ul>
+													<ul class="column">
+														<li class="li-menu-title">
+															<p>Grande</p>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/rottweiler">Rottweiler</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/husky-siberiano">Husky siberiano</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/golden-retriever">Golden retriever</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/pastor-alemao">Pastor Alemão</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/labrador">Labrador</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/doberman">Doberman</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cachorro/racas/dog-alemao">Dog Alemão</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+                  <li class="menuparent" style="background-color: rgb(238, 238, 238);">
+										<a>
+											Marcas
+											<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+											<i class="arrow arrow-right"></i>
+										</a>
+										<div class="holder-sub">
+											<ul class="sub-menu ext sub-menu-inside">
+												<li class="li-menu-list">
+													<ul class="column">
+														<li class="li-menu-title">
+															<p>Ração</p>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/royal-canin/f/pet_cachorros">Royal Canin</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/premierpet/f/pet_cachorros">Premier Pet</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/golden/f/pet_cachorros">Golden</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/nd/f/pet_cachorros">N&amp;D</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/granplus/f/pet_cachorros">Gran Plus</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/affinity/f/pet_cachorros">Affinity</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/hills/f/pet_cachorros">Hill's</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/equilibrio/f/pet_cachorros">Equilíbrio</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/nestle-purina/f/pet_cachorros">Nestlé Purina</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/vetlife/f/pet_cachorros">Vet Life</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cibau">Cibau</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/pedigree">Pedigree</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/biofresh/f/pet_cachorros">Biofresh</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/formula-natural/f/pet_cachorros">Fórmula Natural</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/naturalis/f/pet_cachorros">Naturalis</a>
+														</li>
+													</ul>
+													<ul class="column">
+														<li class="li-menu-title">
+															<p>Farmácia</p>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/bravecto/f/pet_cachorros">Bravecto</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/zoetis/f/pet_cachorros">Zoetis</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/bayerpet/f/pet_cachorros">Bayer Pet</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/ageneruniao/f/pet_cachorros">Agener União</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/virbac/f/pet_cachorros">Virbac</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/vetnil/f/pet_cachorros">Vetnil</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/ourofino/f/pet_cachorros">Ourofino</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/avert-saude-animal/f/pet_cachorros">Avert Saúde
+																Animal</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/boehringer-ingelheim/f/pet_cachorros">Boehringer
+																Ingelheim</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/cepav/f/pet_cachorros">Cepav</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/elanco/f/pet_cachorros">Elanco</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/ceva/f/pet_cachorros">Ceva</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/organnact/f/pet_cachorros">Organnact</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/msd/f/pet_cachorros">MSD</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/labyes/f/pet_cachorros">Labyes</a>
+														</li>
+													</ul>
+													<ul class="column">
+														<li class="li-menu-title">
+															<p>Beleza e Limpeza</p>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/supersecao">Supersecão</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/chalesco/f/pet_cachorros">Chalesco</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/expet">Expet</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/zee-dog">Zee.Dog</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/petz/f/pet_cachorros">Petz</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/pet-society/f/pet_cachorros">Pet Society</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/petix">Petix</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/saofrancisco">São Francisco</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/vet20/f/pet_cachorros">Vet +20</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/ourofino/f/pet_cachorros">Ourofino</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/dogscare/f/pet_cachorros">Dog's Care</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/sanol/f/pet_cachorros">Sanol</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/mundo-animal/f/pet_cachorros">Mundo Animal</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/petbrilho/f/pet_cachorros">Petbrilho</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/petwash">Petwash</a>
+														</li>
+													</ul>
+													<ul class="column">
+														<li class="li-menu-title">
+															<p>Acessórios</p>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/chalesco/f/pet_cachorros">Chalesco</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/tubline/f/pet_cachorros">Tubline</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/furacao-pet/f/pet_cachorros">Furacão Pet</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/ferplast/f/pet_cachorros">Ferplast</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/urban-puppy/f/pet_cachorros">Urban Puppy</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/petgames/f/pet_cachorros">Pet Games</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/griff-dog/f/pet_cachorros">Griff Dog</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/zooz-pets">Zooz Pets</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/bonito-pra-cachorro">Bonito pra Cachorro</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/petz/f/pet_cachorros">Petz</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/pawise/f/pet_cachorros">Pawise</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/lcm/f/pet_cachorros">LCM</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/jambopet/f/pet_cachorros">Jambo Pet</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/pickorruchos/f/pet_cachorros">Pickorruchos</a>
+														</li>
+														<li class="li-menu-testeira">
+															<a class="submenu-text" href="/zee-dog">Zee.Dog</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+											<div class="favorite-brands hideTotenAssinatura">
+												<div class="image-category">
+													<img src="https://www.petz.com.br/novaLoja/images/menu/cat-cachorro.jpg">
+												</div>
+											</div>
+										</div>
+                  </li>
+                  
+                       </ul>
+                     </li>
+                   </ul>
+                 </li>
+                 
+                 <li clas="dropdown dropdown-dog yamm-fw x"></li>
+                 <li clas="dropdown dropdown-dog yamm-fw x"></li>
+                 <li clas="dropdown dropdown-dog yamm-fw x"></li>
+                 <li clas="dropdown dropdown-dog yamm-fw x"></li>
+                 <li clas="dropdown dropdown-dog yamm-fw x"></li>
+                 <li clas="dropdown dropdown-dog yamm-fw x"></li>
+                 <li clas="dropdown dropdown-dog yamm-fw x"></li>
+
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

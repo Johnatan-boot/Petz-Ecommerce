@@ -1,0 +1,94 @@
+/*Configurações Css*/
+img.logo.img-responsive{
+    width: 89;
+    height: 48;
+}
+
+img.logoMenu{
+    width:61;
+    height: 33;
+}
+/*Configurações Css*/
+
+nav.bgNav.navbar.sticky-top{
+    color: #444444;
+    font: 16px;
+    font-family: Roboto,sans-serif;
+    background: #FCD03B;
+    padding: 8px,16px;
+}
+/*Configurações Css*/
+/*Configurações Css*/
+/*Configurações Css*/
+/*Configurações Css*/
+
+
+
+
+/*Configurações Css*/
+#loja__virtual {
+    background: linear-gradient(329.54deg,  #FFD400 0%,  #fdd403 100%) no-repeat;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+      
+    }
+
+
+ .div.header-content-holder{
+     width:773;
+     height:68;
+     color: #444444;
+     font-family: Roboto,sans-serif;
+     font: 14px;
+ }   
+/*Configurações Css*/
+.header-content-holder /*seletor de classe*/{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*Configurações Css*/
+*/*seletor universal*/{
+ box-sizing: border-box;
+}
+
+/*Configurações Css*/
+*{
+}
+/*Configurações Css*/
+
+body{
+    line-height: 1.42857143;
+    background-color: #fff;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+
+/*Configurações Css*/
+html{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/*Configurações Css*/
+*, :after,:before{
+    box-sizing: border-box;
+}
+
+/*Configurações Css*/
+:after,:before {
+    box-sizing: border-box;
+}
+
+/*Configurações Css*/
+/*Configurações Css*/
+/*Configurações Css*/
